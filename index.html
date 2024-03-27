@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV'S PIZZA</title>
+    <meta name="author" content="Dev Patel">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Add heading for the page -->
+        <h1 id="heading">DEV'S PIZZA</h1>
+    </header>
+    <main>
+        <!-- Add an image with alt text -->
+        <img id="adImg" src="./css/img/PIZZA.png" alt="Three photos of delicious pizza">
+        <form action="img" method="POST" id="orderForm">
+            <!-- Fieldset to group related form elements -->
+            <fieldset>
+                <!-- Legend for the fieldset -->
+                <legend>To order Your Pizza</legend>
+                <!-- Form inputs -->
+
+                <div class="firstName">
+                    <!-- Label and input field for first name -->
+                    <label for="firstName">First Name:</label>
+                    <input type="text" required autofocus placeholder="First Name" id="firstName" name="firstName">
+                </div>
+                <br>
+
+                <div class="lastName">
+                    <!-- Label and input field for last name -->
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" required placeholder="Last Name" id="lastName" name="lastName">
+                </div>
+                <br>
+
+                <div class="email">
+                    <!-- Label and input field for email -->
+                    <label for="email">Email:</label>
+                    <input type="email" required placeholder="emailid@icloud.com" id="email" name="email">
+                </div>
+                <br>
+
+                <div class="PizzaTypes">
+                    <!-- Label and select field for pizza type -->
+                    <label for="typePizza">Choose Pizza:</label>
+                    <select name="pizzaTypes" id="typePizza" required>
+                        <option value="">--Select a Pizza--</option>
+                        <option value="7-cheese">7-Cheese</option>
+                        <option value="Margherita">Margherita</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="mushrooms">Mushrooms</option>
+                    </select>
+                </div>
+                <br>
+
+                <div class="foodPreference">
+                    <!-- Label and select field for pizza size -->
+                    <label for="sizePizza">Choose Size:</label>
+                    <select name="pizzaSize" id="sizePizza" required>
+                        <option value="">--size--</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
+                    </select>
+                </div>
+                <br>
+
+                <div class="extraOptions">
+                    <!-- Checkboxes for extra cheese and extra sauce -->
+                    <div class="extraSauce">
+                        <label for="moreSauce">Extra Sauce:</label>
+                        <input type="checkbox" id="moreSauce" name="moreSauce" value="yes">
+                    </div>
+                    <br>
+                    <div class="extraCheese">
+                        <label for="moreCheese">Extra Cheese:</label>
+                        <input type="checkbox" id="moreCheese" name="moreCheese" value="yes">
+                    </div>
+                </div>
+                <br>
+
+                <div class="quantity">
+                    <!-- Label and input field for quantity -->
+                    <label for="quantity">How Many Pizza?</label>
+                    <input type="number" required placeholder="1" id="quantity" name="quantity">
+                </div>
+                <br>
+
+                <div class="telephone">
+                    <!-- Label and input field for telephone -->
+                    <label for="telephone">Telephone:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+1 (123)456-7890" required>
+                </div>
+                <br>
+
+                <div class="address">
+                    <!-- Label and textarea for address -->
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="6" cols="30" placeholder="Enter your address" required></textarea>
+                </div>
+                <br>
+
+                <div class="postalCode">
+                    <!-- Label and input field for PIN/Postal code -->
+                    <label for="postal_code">PIN/Postal Code:</label>
+                    <input type="text" id="postal_code" name="postal_code" placeholder="Enter your PIN/Postal Code" required>
+                </div>
+                <br>
+
+                <div class="city">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required >
+                </div>
+                <br>
+
+                <div class="province">
+                    <label for="province">Province/State:</label>
+                    <input type="text" id="province" name="province" placeholder="Enter your province or state" required>       
+                </div>
+                <br>
+
+                <div class="additional notes">
+                    <label for="additional_notes">Additional note for your order:</label>
+                    <textarea id="additional_notes" name="additional_notes" rows="3" cols="25" placeholder="Enter Notes" required></textarea>
+                </div>
+                <br>
+
+                <div class="orderButton">
+                    <!-- Button to submit the form -->
+                    <button type="submit">Order Here</button>
+                </div>
+
+            </fieldset>
+        </form>
+         <!-- Description output -->
+        <div id="descriptionOutput"></div>
+        <p id="studentInfo" class="studentInfo"></p>
+
+    </main>
+    <footer id="footer">
+        <!-- Follow us on social media section -->
+        <p>Keep tracking new offers on social media:</p>
+        <menu>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </menu>
+        <!-- Contact us section -->
+        <p>Contact us:</p>
+        <menu>
+            <li>Phone: 123-456-7890</li>
+            <li>Email: info@devspizza.com</li>
+            <li>Address: 007 Anonimous street, New York, USA</li>
+        </menu>
+        <!-- Copyright section -->
+        <p>&copy; 2024 DEV'S PIZZA. All rights reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

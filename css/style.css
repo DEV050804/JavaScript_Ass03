@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Use cover to fill the entire element without distortion */
+    background-position: center; 
+}
+
+/* Style the header */
+header {
+    background-color: #222222; /* Update header background color */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ffffff; /* Add a white border at the bottom */
+}
+
+/* Style the heading */
+#heading {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the image */
+#adImg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Style the form */
+form {
+    background-color: #f2f9ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the fieldset */
+fieldset {
+    border: none;
+}
+
+/* Style the legend */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Style the labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style the inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style the radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Style the button */
+button[type="submit"] {
+    background-color:#e64a19;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #39f445;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social media links */
+footer menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+/* Contact info */
+footer p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Menu styles */
+/* Menu list */
+menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu list items */
+menu li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
